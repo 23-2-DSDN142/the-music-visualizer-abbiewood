@@ -29,7 +29,7 @@ ellipse(1000, 800, 300);
 
 
 //sea
-fill ("#4898a8")
+fill ("#B9CEC3")
 rect(0, 800, width+2, 600);
 //add in image with extra texture and movement.
 
