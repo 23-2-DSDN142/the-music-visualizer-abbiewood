@@ -5,5 +5,5 @@
 A P5JS framework for running a simple music visualizer, intended as a creative coding I assignment.
 
 Song details: 
-Title = Here Comes The Sun
+Title = Here Comes The Sun - Remastered 2009
 Artist = The Beatles
