@@ -1,4 +1,3 @@
-
 //establishing loading image variables
 let landscapeImage;
 let sandImage;
@@ -64,22 +63,19 @@ line (0, i, width, i)
 }
 
 //clouds
-let cloudXStart = -2000
-let cloudXEnd =  3840
+let cloudXStart = -16000
+let cloudXEnd = 0
 let whenSongStart = 14 //put in here when the first line is sung
-let cloudMap = map(song.currentTime(), whenSongStart, song.duration (), cloudXStart, cloudXEnd, )
+let cloudMap = map(song.currentTime(), whenSongStart, song.duration (), cloudXStart, cloudXEnd )
 image (cloudsImage, cloudMap, 0)
 
 //sun controlled by vocal variation
 let sunYStart = 880;
 let sunYEnd = 400;
-
-
 let sunYMap = map(song.currentTime(), 0, sunYEnd,sunYStart, 0)
 strokeWeight (0)
 
 drawSun(1000,sunYMap, vocal)
-
 
 
 //lanscape, sea and sand
@@ -110,10 +106,10 @@ image (pohutukawaImage,0, pohutukawaMap)
 let familyMap = map (bass,0,100,0,40)
 image (familyImage,0,familyMap)
 
-let birdsMap = map (other,0,100,0, 60)
+let birdsMap = map (other,0,100,0, 100)
 image (seagullsImage, 0,birdsMap)
 
-let rocksMap = map (drum, 20, 100, 0, 60)
+let rocksMap = map (drum, 20, 100, 0, 30)
 image (rocksImage, 0, rocksMap)
 
 }
