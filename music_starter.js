@@ -25,7 +25,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
   if(firstRun){
 
-  // images loading in
+  // images loading in here
     landscapeImage = loadImage ('landscape.png');
     sandImage = loadImage ('sand.png')
     oceanImage = loadImage ('ocean.png');
@@ -78,10 +78,14 @@ strokeWeight (0)
 drawSun(1000,sunYMap, vocal)
 
 
-//lanscape, sea and sand
+//lanscape, sand and rocks
 image (landscapeImage, 0,0)
 image (sandImage, 0,0)
 
+let rocksMap = map (drum, 20, 100, 0, 30)
+image (rocksImage, 0, rocksMap)
+
+//ocean
 image (oceanImage,0,0)
 
 let oceanDetailMap = map (drum,0,100, 0, 20)
@@ -109,11 +113,9 @@ image (familyImage,0,familyMap)
 let birdsMap = map (other,0,100,0, 100)
 image (seagullsImage, 0,birdsMap)
 
-let rocksMap = map (drum, 20, 100, 0, 30)
-image (rocksImage, 0, rocksMap)
 
 }
-
+//function draws the sun and rays.
 function drawSun(x, y, V){
   push()
 
