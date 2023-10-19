@@ -81,17 +81,14 @@ drawSun(1000,sunYMap, vocal)
 //lanscape, sand and rocks
 image (landscapeImage, 0,0)
 image (sandImage, 0,0)
-
-let rocksMap = map (drum, 20, 100, 0, 30)
-image (rocksImage, 0, rocksMap)
+image (rocksImage, 0, 0)
 
 //ocean
 image (oceanImage,0,0)
-
-let oceanDetailMap = map (drum,0,100, 0, 20)
+let oceanDetailMap = map (drum,0,100, 0, 40)
 image (oceanDetailImage, oceanDetailMap,0)
 
-let oceanSparkleMap = map (drum,0,100, 0, 10)
+let oceanSparkleMap = map (drum,0,100, 0, 40)
 image (oceanSparkleImage, oceanSparkleMap,0)
 
 //trees at the top
@@ -127,7 +124,6 @@ function drawSun(x, y, V){
   let shortLineLength = 150
 
   strokeWeight(10)
-
   stroke(rayColor)
 
   // you can figure out how to use a for loop here!
